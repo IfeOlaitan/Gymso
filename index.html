@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Gymso Fitness</title>
 </head>
@@ -13,19 +14,21 @@
         <h2 class="logo">Gymso Fitness</h2>
 
         <ul class="list">
-            <li class="list__item"><a href="#" class="list__link">Home</a></li>
-            <li class="list__item"><a href="#" class="list__link">About Us</a></li>
-            <li class="list__item"><a href="#" class="list__link">Classes</a></li>
-            <li class="list__item"><a href="#" class="list__link">Contact</a></li>
+            <li class="list__item"><a href="#home" class="list__link">Home</a></li>
+            <li class="list__item"><a href="#about" class="list__link">About Us</a></li>
+            <li class="list__item"><a href="#class" class="list__link">Classes</a></li>
+            <li class="list__item"><a href="#contact" class="list__link">Contact</a></li>
             <div class="icons">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-youtube"></i>
             </div>
         </ul>
+
+        <i id="menu" class="fas fa-bars"></i>
     </nav>
 
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="hero-box">
             <p class="hero-box__paragraph">new way to build a healthy lifestyle</p>
             <h2 class="heading-2">
@@ -39,14 +42,14 @@
     </div>
 
     <section class="section-details">
-        <div class="left">
+        <div class="left" data-aos="fade-right">
             <h4 class="heading-4 mb-sm">New to Gymso?</h4>
             <h6 class="heading-6 mb-sm">Your membership is free for 2 months ($62.50 per month)</h6>
             <p class="left__paragraph mb-lg">Gymso is a free html template for your commercial website. Feel free to use it</p>
             <a href="#" class="btn btn--filled left__button">become a member today</a>
         </div>
 
-        <div class="right">
+        <div class="right" data-aos="fade-left">
             <h3 class="heading-3 mb-lg">Working Hours</h3>
 
             <h5 class="heading-5">Sunday: Closed</h5>
@@ -59,7 +62,7 @@
         </div>
     </section>
 
-    <section class="section-trainer">
+    <section class="section-trainer" id="about" data-aos="fade-up">
          <div class="section-trainer__about">
              <h2 class="heading-2">Hello, we are Gymso</h2>
              <p>
@@ -104,7 +107,7 @@
          </div>
     </section> 
 
-    <section class="section-classes">
+    <section class="section-classes" id="class" data-aos="fade-up">
         <p class="section-classes__paragraph mb-sm">Get a Perfect Body</p>
         <h2 class="section-classes__heading mb-lg">Our Training Classes</h2>
         <div class="cards">
@@ -171,7 +174,7 @@
         </div>
     </section>
 
-    <section class="section-contact">
+    <section class="section-contact" id="contact" data-aos="fade-up">
         <div class="form">
             <h2>Feel free to ask anything</h2>
             <div class="submit">
@@ -196,5 +199,8 @@
             <i class="fas fa-phone-alt"></i> 000-000-0000
         </p>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
+
+$bp-largest: 1042px;
+$bp-large: 991px;
+$bp-medium: 768px;
+$bp-small: 496px;
+
 *,
 *::before,
 *::after {
@@ -9,7 +15,8 @@
 }
 
 html {
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    scroll-behavior: smooth;
 }
 
 body {
